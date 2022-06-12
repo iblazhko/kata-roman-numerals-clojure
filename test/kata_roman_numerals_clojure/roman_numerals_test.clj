@@ -54,3 +54,15 @@
     [90, "XC"],
     [400, "CD"],
     [900, "CM"]]))
+
+(deftest romanize-additive-pattern-numerals
+  (run-test-cases
+   "Additive pattern roman numerals"
+   [[39, "XXXIX"],
+    [207, "CCVII"],
+    [246, "CCXLVI"],
+    [1066, "MLXVI"],
+    [1776, "MDCCLXXVI"],
+    [1873, "MDCCCLXXIII"],
+    [1984, "MCMLXXXIV"],
+    [2018, "MMXVIII"]]))
