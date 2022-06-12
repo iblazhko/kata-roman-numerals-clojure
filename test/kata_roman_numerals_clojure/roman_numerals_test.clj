@@ -11,6 +11,10 @@
         (testing (str number " -> " expected-romans)
           (is (= (romanize number) expected-romans)))))))
 
+(deftest romanize-notnumber-throws-assertion
+  (testing "Non-numeric input produces validation error"
+    (is (thrown? AssertionError (romanize "X")))))
+
 (deftest romanize-0-translates-to-empty-string
   (testing "0 translates to empty string"
     (is (= (romanize 0)
