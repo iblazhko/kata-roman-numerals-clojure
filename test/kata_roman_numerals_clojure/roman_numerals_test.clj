@@ -6,3 +6,8 @@
   (testing "0 translates to empty string"
     (is (= (romanize 0)
            ""))))
+
+(deftest romanize-1-translates-to-I
+  (testing "1 -> I"
+    (is (= (romanize 1)
+           "I"))))
