@@ -21,3 +21,8 @@
   (testing "2 -> II"
     (is (= (romanize 2)
            "II"))))
+
+(deftest romanize-4-translates-to-IV
+  (testing "4 -> IV"
+    (is (= (romanize 4)
+           "IV"))))
