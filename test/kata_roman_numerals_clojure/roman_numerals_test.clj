@@ -16,11 +16,6 @@
     (is (= (romanize 0)
            ""))))
 
-(deftest romanize-2-translates-to-II
-  (testing "2 -> II"
-    (is (= (romanize 2)
-           "II"))))
-
 (deftest romanize-4-translates-to-IV
   (testing "4 -> IV"
     (is (= (romanize 4)
@@ -37,3 +32,14 @@
     [500, "D"],
     [1000, "M"]]))
 
+(deftest romanize-same-subsequent-numerals
+  (run-test-cases
+   "Same subsequent letter roman numerals"
+   [[2, "II"],
+    [3, "III"],
+    [20, "XX"],
+    [30, "XXX"],
+    [200, "CC"],
+    [300, "CCC"],
+    [2000, "MM"],
+    [3000, "MMM"]]))
