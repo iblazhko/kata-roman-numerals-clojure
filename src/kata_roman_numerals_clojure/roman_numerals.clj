@@ -35,5 +35,6 @@
   "Translate a number to Roman Numerals string representation."
   [number]
   {:pre [(number? number)
-         (>= number 0)]}
+         (>= number 0)
+         (>= 4000 number)]}
   (process-bucket [] number))
