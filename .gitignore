@@ -1,17 +1,19 @@
+# Java
 *.class
 *.jar
 
-
-/.lein-*
-/.lsp/
-/.nrepl-port
-/.prepl-port
-/checkouts
 /classes
 /target
 
 pom.xml
 pom.xml.asc
+
+# Leiningen
+/.lein-*
+/.lsp/
+/.nrepl-port
+/.prepl-port
+/checkouts
 
 profiles.clj
 
@@ -24,3 +26,6 @@ profiles.clj
 
 # Calva
 .clj-kondo/
+
+# Other
+.DS_Store
