@@ -34,5 +34,6 @@
 (defn romanize
   "Translate a number to Roman Numerals string representation."
   [number]
-  {:pre [(number? number)]}
+  {:pre [(number? number)
+         (>= number 0)]}
   (process-bucket [] number))
