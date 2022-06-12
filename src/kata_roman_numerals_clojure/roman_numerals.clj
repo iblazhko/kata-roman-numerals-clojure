@@ -1,7 +1,8 @@
 (ns kata-roman-numerals-clojure.roman-numerals)
 
 (def buckets {1 "I",
-              5 "V"})
+              5 "V",
+              4 "IV"})
 
 (defn find-largest-bucket
   [number]
