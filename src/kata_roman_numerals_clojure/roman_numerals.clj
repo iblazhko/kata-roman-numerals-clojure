@@ -6,5 +6,6 @@
   [number]
   (match number
     1 "I"
+    2 "II"
     5 "V"
     :else ""))
