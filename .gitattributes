@@ -1,0 +1,6 @@
+* text=auto
+*.clj           text
+*.js            text
+*.json          text
+*.markdown      text
+*.md            text
