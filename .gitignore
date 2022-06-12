@@ -1,0 +1,26 @@
+*.class
+*.jar
+
+
+/.lein-*
+/.lsp/
+/.nrepl-port
+/.prepl-port
+/checkouts
+/classes
+/target
+
+pom.xml
+pom.xml.asc
+
+profiles.clj
+
+# VisualStudio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Calva
+.clj-kondo/
