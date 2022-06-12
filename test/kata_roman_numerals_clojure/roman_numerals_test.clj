@@ -43,3 +43,14 @@
     [300, "CCC"],
     [2000, "MM"],
     [3000, "MMM"]]))
+
+
+(deftest romanize-subtractive-notation-numerals
+  (run-test-cases
+   "Subtractive notation roman numerals"
+   [[4, "IV"],
+    [9, "IX"],
+    [40, "XL"],
+    [90, "XC"],
+    [400, "CD"],
+    [900, "CM"]]))
