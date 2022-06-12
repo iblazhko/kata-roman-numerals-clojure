@@ -16,3 +16,8 @@
   (testing "5 -> V"
     (is (= (romanize 5)
            "V"))))
+
+(deftest romanize-2-translates-to-II
+  (testing "2 -> II"
+    (is (= (romanize 2)
+           "II"))))
