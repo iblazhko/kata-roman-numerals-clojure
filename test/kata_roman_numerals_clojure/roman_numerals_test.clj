@@ -16,11 +16,6 @@
     (is (= (romanize 0)
            ""))))
 
-(deftest romanize-4-translates-to-IV
-  (testing "4 -> IV"
-    (is (= (romanize 4)
-           "IV"))))
-
 (deftest romanize-single-numeral
   (run-test-cases
    "Single letter roman numerals"
