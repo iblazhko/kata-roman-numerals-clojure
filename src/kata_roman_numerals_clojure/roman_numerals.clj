@@ -1,4 +1,5 @@
-(ns kata-roman-numerals-clojure.roman-numerals)
+(ns kata-roman-numerals-clojure.roman-numerals
+  (:require [clojure.spec.alpha :as spec]))
 
 (def buckets {1 "I",
               5 "V",
@@ -33,4 +34,5 @@
 (defn romanize
   "Translate a number to Roman Numerals string representation."
   [number]
+  {:pre [(number? number)]}
   (process-bucket [] number))
