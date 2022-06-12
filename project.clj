@@ -3,8 +3,7 @@
   :url "https://github.com/iblazhko/kata-roman-numerals-clojure"
   :license {:name "MIT"
             :url "https://opensource.org/licenses/MIT"}
-  :dependencies [[org.clojure/clojure "1.11.1"]
-                 [org.clojure/core.match "1.0.0"]]
+  :dependencies [[org.clojure/clojure "1.11.1"]]
   :main ^:skip-aot kata-roman-numerals-clojure.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all
