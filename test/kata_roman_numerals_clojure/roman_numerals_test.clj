@@ -11,17 +11,29 @@
         (testing (str number " -> " expected-romans)
           (is (= (romanize number) expected-romans)))))))
 
+(defn run-input-validation-test-cases
+  [test-name test-cases]
+  (testing test-name
+    (doseq [x test-cases]
+      (is (thrown? AssertionError (romanize x))))))
+
 (deftest romanize-notanumber-throws-assertion
-  (testing "Non-numeric input produces validation error"
-    (is (thrown? AssertionError (romanize "X")))))
+  (run-input-validation-test-cases
+   "Non-integer input produces validation error"
+   [{},
+    [1],
+    #{5},
+    '(10),
+    "50",
+    100.0]))
 
-(deftest romanize-negativenumber-throws-assertion
-  (testing "Negative number input produces validation error"
-    (is (thrown? AssertionError (romanize -1)))))
-
-(deftest romanize-toolargenumber-throws-assertion
-  (testing "Out of range input produces validation error"
-    (is (thrown? AssertionError (romanize 4001)))))
+(deftest romanize-outofrangenumber-throws-assertion
+  (run-input-validation-test-cases
+   "Input outside of allowed range produces validation error"
+   [-5,
+    -1,
+    4000,
+    4001]))
 
 (deftest romanize-0-translates-to-empty-string
   (testing "0 translates to empty string"
