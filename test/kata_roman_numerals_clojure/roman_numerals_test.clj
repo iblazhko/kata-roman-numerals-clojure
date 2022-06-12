@@ -19,6 +19,10 @@
   (testing "Negative number input produces validation error"
     (is (thrown? AssertionError (romanize -1)))))
 
+(deftest romanize-toolargenumber-throws-assertion
+  (testing "Out of range input produces validation error"
+    (is (thrown? AssertionError (romanize 4001)))))
+
 (deftest romanize-0-translates-to-empty-string
   (testing "0 translates to empty string"
     (is (= (romanize 0)
