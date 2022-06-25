@@ -27,7 +27,7 @@
     (let [bucket (find-largest-bucket reminder)
           bucket-size (first bucket)
           bucket-numerals (second bucket)]
-      (process-bucket
+      (recur
        (conj numerals bucket-numerals)
        (- reminder bucket-size)))))
 
