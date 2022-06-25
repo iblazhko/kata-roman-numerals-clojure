@@ -3,5 +3,5 @@
 
 (defn -main
   "Main is a NO-OP, run unit test."
-  [& args]
+  [& _]
   (println "Hello, Roman Numerals World!"))

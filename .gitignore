@@ -11,6 +11,7 @@ pom.xml.asc
 # Leiningen
 /.lein-*
 /.lsp/
+/.nrepl-history
 /.nrepl-port
 /.prepl-port
 /checkouts
@@ -25,6 +26,7 @@ profiles.clj
 !.vscode/extensions.json
 
 # Calva
+.calva/
 .clj-kondo/
 
 # Other

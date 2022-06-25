@@ -1,4 +1,5 @@
 (ns kata-roman-numerals-clojure.roman-numerals-test
+  #_{:clj-kondo/ignore [:refer-all]}
   (:require [clojure.test :refer :all]
             [kata-roman-numerals-clojure.roman-numerals :refer [romanize]]))
 
