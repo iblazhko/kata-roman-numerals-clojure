@@ -1,0 +1,13 @@
+{
+    "name": "Clojure/Leiningen",
+    "dockerFile": "Dockerfile",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "betterthantomorrow.calva",
+                "editorconfig.editorconfig",
+                "streetsidesoftware.code-spell-checker"
+            ]
+        }
+    }
+}
